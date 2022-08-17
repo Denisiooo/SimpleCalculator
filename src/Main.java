@@ -2,10 +2,13 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
     public static String calc(String input) {
+        Scanner scanner = new Scanner(System.in);
+        input = scanner.nextLine();
         int num1 = 0;
         int num2 = 0;
         int res = 0;
@@ -149,7 +152,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        calc("1+2+3");
+        calc("");
     }
 }
 
